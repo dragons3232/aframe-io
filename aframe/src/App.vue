@@ -2,7 +2,7 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
   <a-scene>
-    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" material="src: netpower.png"></a-box>
+    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" scale="1 0.5 2" material="src: netpower.png"></a-box>
     <a-entity position="-2 2 -3" rotation="0 -30 0" geometry="primitive: box; width: 0.5; height: 1; depth: 1.5" material="color: #8855aa; opacity: 0.4"></a-entity>
     <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
     <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
