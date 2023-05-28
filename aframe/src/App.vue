@@ -29,6 +29,13 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  mounted(){
+    setTimeout(() => {
+      var camera = document.querySelector("a-camera");
+      camera.components["look-controls"].pitchObject.rotation.x = -0.3;
+      camera.components["look-controls"].yawObject.rotation.y = 0.3
+    }, 100);
   }
 }
 </script>
