@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- Custom aframe component with THREE js https://jsfiddle.net/gftruj/3brL5744/ -->
   <a-scene>
     <a-assets>
       <img id="netpower" src="netpower.png">
