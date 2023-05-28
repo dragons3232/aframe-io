@@ -7,7 +7,7 @@
     <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
     <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
     <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-    <a-entity position="-1 4 -3" light="type: point; intensity: 0.5"></a-entity>
+    <a-entity position="-1 4 -3" light="type: point; intensity: 0.5" animation="property: position; easing: easeInOutQuad; dir: alternate; dur: 1000; to: -1 1 -3.5; loop: true"></a-entity>
     <a-entity id="light" light="type: ambient; color: #ccc"></a-entity>
     <a-sky color="#ECECEC"></a-sky>
   </a-scene>
