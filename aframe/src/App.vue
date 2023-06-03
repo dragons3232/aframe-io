@@ -6,7 +6,11 @@
     <a-assets>
       <img id="netpower" src="netpower.png">
     </a-assets>
-    <a-entity position="0 0 0" rotation="0 -20 -10">
+    <a-entity
+      position="0 0 0"
+      rotation="0 0 0"
+      animation="property: position; easing: easeInOutQuad; dir: alternate; dur: 3000; to: 0 0 -3; loop: true"
+    >
     <a-camera
      position="0 2 1"
      look-controls="enabled: true"
