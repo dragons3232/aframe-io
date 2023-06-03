@@ -6,6 +6,7 @@
     <a-assets>
       <img id="netpower" src="netpower.png">
     </a-assets>
+    <a-entity position="0 0 0" rotation="0 -20 -10">
     <a-camera
      position="0 2 1"
      look-controls="enabled: true"
@@ -18,6 +19,7 @@
         material="color: red">
       </a-entity>
     </a-camera>
+    </a-entity>
     <a-box onclick="alert('box 1')" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" scale="1 0.5 2" material="src: netpower.png" animation="property: position; easing: easeInOutQuad; dir: alternate; dur: 1000; to: -1 1 -3.5; loop: true"></a-box>
     <a-entity onclick="alert('box 2')" position="-2 2 -3" rotation="0 -30 0" geometry="primitive: box; width: 0.5; height: 1; depth: 1.5" material="color: #8855aa; opacity: 0.4; src: #netpower"></a-entity>
     <a-sphere cursor-listener raycaster-listen position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
@@ -38,11 +40,13 @@ export default {
     HelloWorld
   },
   mounted(){
+    /*
     setTimeout(() => {
       var camera = document.querySelector("a-camera");
       camera.components["look-controls"].pitchObject.rotation.x = -0.3;
       camera.components["look-controls"].yawObject.rotation.y = 0.3
     }, 100);
+    */
 
     this.registerCursor()
     this.registerRaycast()
