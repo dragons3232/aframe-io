@@ -25,6 +25,7 @@
       </a-entity>
     </a-camera>
     </a-entity>
+    <a-entity gltf-model="#cityModel" position="0 0 18"></a-entity>
     <a-box onclick="alert('box 1')" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" scale="1 0.5 2" material="src: netpower.png" animation="property: position; easing: easeInOutQuad; dir: alternate; dur: 1000; to: -1 1 -3.5; loop: true"></a-box>
     <a-entity onclick="alert('box 2')" position="-2 2 -3" rotation="0 -30 0" geometry="primitive: box; width: 0.5; height: 1; depth: 1.5" material="color: #8855aa; opacity: 0.4; src: #netpower"></a-entity>
     <a-sphere cursor-listener raycaster-listen position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
